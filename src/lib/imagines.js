@@ -3,9 +3,9 @@ import PARAM_LEVEL from "../../game/api/bno/imagine/param_level.json";
 import PERK_PICK from "../../game/api/bno/imagine/perk_pick.json";
 import WEAPONPERKS from "../../game/api/bno/WEAPONPERKS.json";
 import PERKS from "../../game/api/bno/perks.json";
-import ImagineArtsName from "./bp_client/bno/Content/Text/ImagineArtsName.json"
+import ImagineArtsName from "../../game/client/bno/Content/Text/ImagineArtsName.json"
 import { getText, getAssets, getSources, fetchDTs, getCategory, getAbilities } from "./utils";
-import ImagineEffectType from "./bp_client/bno/Content/Text/ImagineEffectType.json"
+import ImagineEffectType from "../../game/client/bno/Content/Text/ImagineEffectType.json"
 import ATTACK_DATA from "../../game/api/bno/attack_data.json"
 
 // TODO: 3d models
@@ -14,12 +14,12 @@ import ATTACK_DATA from "../../game/api/bno/attack_data.json"
 
 // Collection of DataTables from client
 const DTList_Skills = await fetchDTs({
-    ...import.meta.glob('./bp_client/bno/Content/Blueprints/Player/Skill/*/*.json'),
-    ...import.meta.glob('./bp_client/bno/Content/Blueprints/Player/Skill/*/*/*.json')
+    ...import.meta.glob('../../game/client/bno/Content/Blueprints/Player/Skill/*/*.json'),
+    ...import.meta.glob('../../game/client/bno/Content/Blueprints/Player/Skill/*/*/*.json')
 })
 
 const DTList_Projectiles = await fetchDTs(
-    import.meta.glob('./bp_client/bno/Content/Blueprints/Magic/Imagine/*/*/*.json'))
+    import.meta.glob('../../game/client/bno/Content/Blueprints/Magic/Imagine/*/*/*.json'))
 
 const DT_ImagineTable = DTList_Skills.find(obj => obj.Name === "ImagineTable")
 

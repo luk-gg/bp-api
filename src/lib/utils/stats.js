@@ -5,7 +5,7 @@ import PERK_PICK from "../../../game/api/bno/imagine/perk_pick.json";
 import WEAPON_STATUS_LEVELS from "../../../game/api/bno/weapon_status_levels.json";
 import IMAGINE_PARAM_LEVEL from "../../../game/api/bno/imagine/param_level.json";
 import MASTER_WEAPON_STATUSADD_BYSTACKBOOSTS from "../../../game/api/bno/master_weapon_statusadd_bystackboosts.json";
-import { getText } from "./index"
+import { getText } from "./index.js"
 
 export function getAbilities(tableId, lang) {
     if (!tableId || tableId === "none") return
