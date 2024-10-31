@@ -32,7 +32,7 @@ const costumes = (lang) => COSTUME.map(costume => {
 export function getCostumeThumbnail(costume) {
     const costumeType = getCostumeType(costume)
     const pathToThumb = getPartsPath(costumeType)
-    return `/UI/Icon/Costume/${pathToThumb}/${costume.icon_name}.webp`
+    return `/UI/Icon/Costume/${pathToThumb}/${costume.icon_name}.png`
 }
 
 function getCostumeType(costume) {
