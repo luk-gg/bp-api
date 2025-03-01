@@ -7,6 +7,10 @@ const config = {
 		alias: {
 			$client: path.resolve('.', 'game/client'),
 		},
+		files: {
+			routes: "utils/routes",
+			appTemplate: "utils/app.html"
+		},
 	}
 };
 
